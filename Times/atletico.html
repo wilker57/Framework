@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Card Soccer</title>
+  </head>
+  <body>
+
+    <a href="clubes.html" class="btn btn-primary">HOME</a>
+    <center>
+    <h1 >Atletico Mineiro</h1> 
+    <img src="data:image/png;base64,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" alt="20px" alt="5px">
+    
+
+     </center>
+
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <div class="card" style="width: 10rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbyNDACdd8qGFBt-sZHqj93SSu0iX0igr6ig&s" class="card-img-top" alt="20 px">
+                        <div class="card-body">
+                          <h5 class="card-title">Everson</h5>
+                          <p class="card-text">Gol</p>
+                          <p class = "card-text">Brasileiro, 38 anos</p>
+                </div>
+        
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 10rem;">
+                    <img src="https://atletico.com.br/wp-content/uploads/2024/07/Alonso_site.png" alt="20px">
+                    <div class="card-body"></div>
+                      <h5 class="card-title">Alonso</h5>
+                      <p class="card-text">Zagueiro</p>
+                      <p class = "card-text">Brasileiro, 30 anos</p>
+                    </div>
+
+
+            </div>
+
+            <div class="col">
+
+                <div class="card" style="width: 10rem;">
+                    <img src="https://atletico.com.br/wp-content/uploads/2023/07/Igor-Rabello-1.png" class="card-img-top" alt="20px">
+                    <div class="card-body">
+                      <h5 class="card-title">Igos Rabello</h5>
+                      <p class="card-text">Zagueiro</p>
+                      <p class = "card-text">Brasileiro, 30 anos</p>
+            </div>
+        </div>
+        </div>
+            <div class="col">
+      
+      <div class="card" style="width: 10rem;">
+        <img src="https://atletico.com.br/wp-content/uploads/2023/07/Arana-2.png" class="card-img-top" alt="20px">
+        <div class="card-body">
+          <h5 class="card-title">Guilherme Arana</h5>
+          <p class="card-text">Lateral</p>
+          <p class = "card-text">Brasileiro, 32 anos</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+      <div class="col">
+        <div class="card" style="width: 10rem;">
+        <img src="https://atletico.com.br/wp-content/uploads/2023/07/Mariano-2.png" class="card-img-top" alt="20px">
+        <div class="card-body">
+         <h5 class="card-title">Mariano</h5>
+         <p class="card-text">Lateral</p>
+         <p class = "card-text">Brasileiro, 28 anos</p>
+      </div>
+      </div>
+      </div>
+          
+         <div class="col">
+         <div class="card" style="width: 10rem;">
+         <img src="https://atletico.com.br/wp-content/uploads/2023/07/Scarpa.png" class="card-img-top" alt="20px">
+          <div class="card-body">
+          <h5 class="card-title">Gustavo Scarpa</h5>
+          <p class="card-text">Meio</p>
+          <p class = "card-text">Brasileiro, 30 anos</p>
+        </div>
+      </div>
+       </div>
+
+       <div class="col">
+      <div class="card" style="width: 10rem;">
+        <img src="https://atletico.com.br/wp-content/uploads/2023/07/Zaracho-2.png" class="card-img-top" alt="20px">
+        <div class="card-body">
+          <h5 class="card-title">Zaracho</h5>
+          <p class="card-text">Meio</p>
+          <p class = "card-text">Uruguaio, 28 anos</p>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+      <div class="card" style="width: 10rem;">
+        <img src="https://atletico.com.br/wp-content/uploads/2023/07/Igor-Gomes-2.png" class="card-img-top" alt="20px">
+        <div class="card-body">
+          <h5 class="card-title">Igor Gomes</h5>
+          <p class="card-text">Meio</p>
+          <p class = "card-text">Uruguaio, 26 anos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+      <div class="col">
+      <div class="card" style="width: 10rem;">
+        <img src="https://atletico.com.br/wp-content/uploads/2024/07/Fausto-Vera-site.png" class="card-img-top" alt="20px">
+        <div class="card-body">
+          <h5 class="card-title">Fausto Vera</h5>
+          <p class="card-text">Meio</p>
+          <p class = "card-text">Uruguaio, 32 anos</p>
+        </div>
+        </div>
+        </div>
+        
+        <div class="col">
+
+        <div class="card" style="width: 10rem;">
+            <img src="https://atletico.com.br/wp-content/uploads/2023/07/Alan-Kardec.png" class="card-img-top" alt="20px">
+            <div class="card-body">
+              <h5 class="card-title">Alan Kardec</h5>
+              <p class="card-text">Atacante</p>
+              <p class = "card-text">Brasileiro, 27 anos</p>
+            </div>
+           </div>
+          </div>
+
+            <div class="col">
+            <div class="card" style="width: 10rem;">
+                <img src="https://atletico.com.br/wp-content/uploads/2023/07/Hulk-2.png" class="card-img-top" alt="20px">
+                <div class="card-body">
+                  <h5 class="card-title">Hulk</h5>
+                  <p class="card-text">Atacante</p>
+                  <p class = "card-text">Brasileiro, 30 anos</p>
+                </div>
+  </body>
+</html>
