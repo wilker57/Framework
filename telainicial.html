@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Bank - Área do Cliente</title>
+    
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand {
+            color: white !important;
+        }
+        .navbar-nav .nav-item .nav-link {
+            color: white !important;
+        }
+        .hero-section {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+        }
+        .account-info-card {
+            margin-top: 30px;
+        }
+        .transaction-card {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">You Bank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Transferências</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Extrato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Configurações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="credenciamento.html">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>Bem-vindo, João Silva!</h1>
+            <p>Você está na sua área de cliente, aproveite seus serviços bancários.</p>
+        </div>
+    </section>
+
+   
+    <div class="container mt-4">
+        <div class="alert alert-success" role="alert">
+            <strong>Sucesso!</strong> Sua transferência foi realizada com sucesso!
+        </div>
+    </div>
+
+   
+    <div class="container mt-2">
+        <div class="alert alert-warning" role="alert">
+            <strong>Atenção!</strong> Seu saldo está abaixo do mínimo recomendado.
+        </div>
+    </div>
+
+ 
+    <div class="container mt-2">
+        <div class="alert alert-danger" role="alert">
+            <strong>Erro!</strong> Não foi possível realizar a operação. Tente novamente.
+        </div>
+    </div>
+
+  
+    <div class="container">
+        <div class="row">
+            <!-- Saldo da Conta -->
+            <div class="col-md-6">
+                <div class="card account-info-card">
+                    <div class="card-header">
+                        <h4>Saldo da Conta</h4>
+                    </div>
+                    <div class="card-body">
+                        <h3>R$ 12.350,50</h3>
+                        <p>Saldo disponível</p>
+                        <a href="#" class="btn btn-primary">Realizar Transferência</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-6">
+                <div class="card account-info-card">
+                    <div class="card-header">
+                        <h4>Cartão de Crédito</h4>
+                    </div>
+                    <div class="card-body">
+                        <h3>R$ 1.500,00</h3>
+                        <p>Limite disponível</p>
+                        <a href="#" class="btn btn-secondary">Ver Fatura</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card transaction-card">
+                    <div class="card-header">
+                        <h4>Últimas Transações</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Descrição</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10/11/2024</td>
+                                    <td>Pagamento de Conta de Luz</td>
+                                    <td>-R$ 150,00</td>
+                                </tr>
+                                <tr>
+                                    <td>08/11/2024</td>
+                                    <td>Transferência Recebida</td>
+                                    <td>+R$ 2.500,00</td>
+                                </tr>
+                                <tr>
+                                    <td>05/11/2024</td>
+                                    <td>Compra no Supermercado</td>
+                                    <td>-R$ 200,00</td>
+                                </tr>
+                                <tr>
+                                    <td>01/11/2024</td>
+                                    <td>Transferência Enviada</td>
+                                    <td>-R$ 1.000,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ações rápidas
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Fazer Transferência</a>
+                        <a class="dropdown-item" href="#">Pagar Conta</a>
+                        <a class="dropdown-item" href="#">Investir</a>
+                        <a class="dropdown-item" href="#">Consultar Extrato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4>Notificações</h4>
+                <span class="badge badge-success">Transferência concluída</span>
+                <span class="badge badge-warning">Saldo baixo</span>
+                <span class="badge badge-danger">Erro na operação</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-dark text-white text-center py-4">
+        <p>wilker&copy; 2024 You Bank - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
