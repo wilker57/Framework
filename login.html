@@ -22,15 +22,19 @@
         <div class="container">
             <div class="row">
               <div class="col">
-        <form>
+        <form class="was-validated">
             <div class="form-group">
                 <label for="CPF">CPF</label>
-                <input type="number" class="form-control" id="number">
-                
+                <input type="number" class="form-control" id="number" required>
+                <div class="valid-feedback">Verificado</div>
+                <div class="invalid-feedback">Preencha todos os campos!</div>
               </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" class="password id="password>
+              <input type="password" class="password id="pwd" required>
+                <div class="valid-feedback">Verificado</div>
+                <div class="invalid-feedback">Preencha todos os campos!</div>
+                
             </div>
             <div class="form-group form-check">
               <div>
